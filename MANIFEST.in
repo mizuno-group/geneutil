@@ -1,0 +1,18 @@
+graft tests
+graft docs
+
+include LICENSE.txt
+include README
+include samplecode.ipynb
+
+prune .git
+
+graft geneutil/dwh
+graft geneutil/_test
+
+global-exclude *.pyc
+global-exclude __pycache__
+
+prune __legacy
+
+global-exclude *.pkl
